@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LaravelPint">
+    <laravel_pint_settings>
+      <LaravelPintConfiguration tool_path="$PROJECT_DIR$/book-borrowing-system/vendor/bin/pint" />
+    </laravel_pint_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/composer" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/league/config" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/book-borrowing-system/vendor/egulias/email-validator" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/book-borrowing-system/phpunit.xml" custom_loader_path="$PROJECT_DIR$/book-borrowing-system/vendor/autoload.php" use_configuration_file="true" />
+    </phpunit_settings>
+  </component>
+</project>

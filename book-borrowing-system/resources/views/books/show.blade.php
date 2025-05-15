@@ -12,7 +12,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-4">
-                <img src="https://via.placeholder.com/300x400?text=Book+Cover" class="img-fluid rounded" alt="{{ $book->judul }}">
+                <img src="{{ asset('assets/images/books/' . $book->rfid_tag . '.jpg') }}" class="img-fluid rounded" alt="{{ $book->judul }}">
             </div>
             <div class="col-md-8">
                 <h2>{{ $book->judul }}</h2>
@@ -34,7 +34,7 @@
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="mt-4">
                     @if(Auth::check())
                         @if($book->stok > 0)
@@ -51,7 +51,7 @@
                             </button>
                         @endif
                     @endif
-                    
+
                     @if(Auth::check() && Auth::user()->role === 'admin')
                         <a href="{{ route('books.edit', $book->id_buku) }}" class="btn btn-warning">
                             <i class="fas fa-edit"></i> Edit
@@ -64,7 +64,7 @@
                             </button>
                         </form>
                     @endif
-                    
+
                     <a href="{{ route('books.index') }}" class="btn btn-secondary">
                         <i class="fas fa-arrow-left"></i> Kembali
                     </a>

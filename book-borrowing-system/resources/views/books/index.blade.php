@@ -18,7 +18,10 @@
     @forelse($books as $book)
         <div class="col-md-3 mb-4">
             <div class="card book-card h-100">
-                <img src="https://via.placeholder.com/300x400?text=Book+Cover" class="card-img-top" alt="{{ $book->judul }}">
+                <img src="{{ asset('assets/images/books/' . $book->rfid_tag . '.jpg') }}"
+                     class="card-img-top"
+                     alt="{{ $book->judul }}"
+                     onerror="this.onerror=null;this.src='https://via.placeholder.com/300x400?text=No+Cover'">
                 <div class="card-body">
                     <h5 class="card-title">{{ $book->judul }}</h5>
                     <p class="card-text">
