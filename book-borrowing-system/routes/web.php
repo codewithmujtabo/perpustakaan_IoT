@@ -8,6 +8,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminMiddleware;
 use App\Http\Middleware\MemberMiddleware;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,33 +28,47 @@ Route::get('/register', [AuthController::class, 'registerForm'])->name('register
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Member and Admin routes
-Route::middleware([MemberMiddleware::class])->group(function () {
-    // Books
-    Route::get('/books', [BookController::class, 'index'])->name('books.index');
-    Route::get('/books/{book}', [BookController::class, 'show'])->name('books.show');
-    
-    // Borrowings
-    Route::get('/borrowings', [BorrowingController::class, 'index'])->name('borrowings.index');
-    Route::get('/borrowings/create', [BorrowingController::class, 'create'])->name('borrowings.create');
-    Route::post('/borrowings', [BorrowingController::class, 'store'])->name('borrowings.store');
-});
+// Dashboard
+Route::get('/dashboard', [DashboardController::class, 'index'])
+    ->middleware(AdminMiddleware::class)
+    ->name('dashboard');
 
-// Admin routes
-Route::middleware([AdminMiddleware::class])->group(function () {
-    // Dashboard
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    
-    // Books management
-    Route::get('/books/create', [BookController::class, 'create'])->name('books.create');
-    Route::post('/books', [BookController::class, 'store'])->name('books.store');
-    Route::get('/books/{book}/edit', [BookController::class, 'edit'])->name('books.edit');
-    Route::put('/books/{book}', [BookController::class, 'update'])->name('books.update');
-    Route::delete('/books/{book}', [BookController::class, 'destroy'])->name('books.destroy');
-    
-    // Return books (admin only)
-    Route::post('/borrowings/{borrowing}/return', [BorrowingController::class, 'returnBook'])->name('borrowings.return');
-    
-    // Users management
+// Book Routes
+Route::get('/books', [BookController::class, 'index'])
+    ->middleware(MemberMiddleware::class)
+    ->name('books.index');
+Route::get('/books/create', [BookController::class, 'create'])
+    ->middleware(AdminMiddleware::class)
+    ->name('books.create');
+Route::post('/books', [BookController::class, 'store'])
+    ->middleware(AdminMiddleware::class)
+    ->name('books.store');
+Route::get('/books/{book}', [BookController::class, 'show'])
+    ->middleware(MemberMiddleware::class)
+    ->name('books.show');
+Route::get('/books/{book}/edit', [BookController::class, 'edit'])
+    ->middleware(AdminMiddleware::class)
+    ->name('books.edit');
+Route::put('/books/{book}', [BookController::class, 'update'])
+    ->middleware(AdminMiddleware::class)
+    ->name('books.update');
+Route::delete('/books/{book}', [BookController::class, 'destroy'])
+    ->middleware(AdminMiddleware::class)
+    ->name('books.destroy');
+
+// Borrowing Routes
+Route::get('/borrowings', [BorrowingController::class, 'index'])
+    ->middleware(MemberMiddleware::class)
+    ->name('borrowings.index');
+Route::get('/borrowings/create', [BorrowingController::class, 'create'])
+    ->middleware(AdminMiddleware::class)
+    ->name('borrowings.create');
+Route::post('/borrowings', [BorrowingController::class, 'store'])
+    ->middleware(AdminMiddleware::class)
+    ->name('borrowings.store');
+Route::post('/borrowings/{borrowings}/return', [BorrowingController::class, 'returnBook'])
+    ->middleware(AdminMiddleware::class)
+    ->name('borrowings.return');
+
+// Users management
     Route::resource('users', UserController::class);
-});
